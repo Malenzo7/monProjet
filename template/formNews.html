@@ -1,0 +1,12 @@
+<form action='index.php?controleur=news&action={action}' method="POST">
+    <div class="form-group">
+    <p><label class="col-sm-2 col-form-label" for='id'>id :</label> <input class="form-control" name='id' id="id" type='text' value='{id}' readonly></p>
+    <p><label class="col-sm-2 col-form-label" for='infoT'>Titre :</label> <textarea class="form-control" name='infoT' id="infoT">{titre}</textarea></p>
+    <p><label class="col-sm-2 col-form-label" for="infoD">Description :</label> <textarea class="form-control" name='infoD' id="infoD">{description}</textarea></p>
+    <p><label class="col-sm-2 col-form-label" for="infoC">Catégorie :</label> 
+    <select class="form-control" name='infoC' id="infoC">
+        {categories}
+    </select></p>
+    <p><button class="btn btn-success" type="submit">Valider</button></p>
+</div>
+</form>
